@@ -34,7 +34,7 @@ jobs:
         git config --global user.name "NateJL"
         git checkout main
         git add /home/runner/work/BoomTown/docs/index.html
-        git commit
+        git commit -m "Update index file"
         git push
       
     - name: print directory V2
