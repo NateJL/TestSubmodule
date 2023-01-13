@@ -15,7 +15,17 @@ jobs:
     - name: print directory
       run: |
         pwd
-        ls -a
+        ls
 
     - name: check for changes
       run: git status
+      
+    - name: Clone BoomTown repo
+      run: git clone https://github.com/NateJL/BoomTown BoomTownTemp
+      
+    - name: print directory V2
+      run: |
+        pwd
+        ls
+      
+    - name: push to BoomTown
