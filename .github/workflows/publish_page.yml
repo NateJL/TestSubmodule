@@ -28,7 +28,7 @@ jobs:
 
     - name: publish blog to BoomTown: main
       run: |
-        eval "$(ssh-agent -s)"
+#        eval "$(ssh-agent -s)"
         echo pwd
 #        ssh-add - <<< "${{ secrets.BLOG_DEPLOY }}"
 #        git config --global user.name "Jan Delgado"
