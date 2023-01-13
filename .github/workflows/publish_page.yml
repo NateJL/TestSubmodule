@@ -21,7 +21,11 @@ jobs:
       run: git status
       
     - name: Clone BoomTown repo
-      run: git clone https://github.com/NateJL/BoomTown BoomTownTemp
+      run: |
+        git clone https://github.com/NateJL/BoomTown /home/runner/work/BoomTownTemp
+        cd /home/runner/work/BoomTownTemp
+        ls
+        git status
       
     - name: print directory V2
       run: |
