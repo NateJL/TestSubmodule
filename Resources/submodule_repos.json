@@ -1,0 +1,11 @@
+{
+	{
+		"name": "submodule repo1"
+		"id": "12345"
+	}
+	{
+		"name": "submodule repo2"
+		"id": "62345"
+	}
+
+}
