@@ -29,3 +29,4 @@ jobs:
         ls
       
     - name: push to BoomTown
+      run: echo "Push to BoomTown repo"
