@@ -24,8 +24,12 @@ jobs:
       run: |
         git clone https://github.com/NateJL/BoomTown /home/runner/work/BoomTownTemp
         cd /home/runner/work/BoomTownTemp
+        echo "===Contents of BoomTownTemp==="
         ls
-        git status
+        echo "======="
+        echo "Head Ref: ${{ github.head_ref }}"
+        rm /home/runner/work/BoomTownTemp/docs/index.html
+        cp /home/runner/work/TestSubmodule/TestSubmodule/Resources/index.html /home/runner/work/BoomTownTemp/docs/index.html
       
     - name: print directory V2
       run: |
