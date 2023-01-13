@@ -22,14 +22,18 @@ jobs:
       
     - name: Clone BoomTown repo
       run: |
-        git clone https://github.com/NateJL/BoomTown /home/runner/work/BoomTownTemp
-        cd /home/runner/work/BoomTownTemp
-        echo "===Contents of BoomTownTemp==="
+        git clone https://github.com/NateJL/BoomTown /home/runner/work/BoomTown
+        cd /home/runner/work/BoomTown
+        echo "===Contents of BoomTown==="
         ls
         echo "======="
         echo "Head Ref: ${{ github.head_ref }}"
-        rm /home/runner/work/BoomTownTemp/docs/index.html
-        cp /home/runner/work/TestSubmodule/TestSubmodule/Resources/index.html /home/runner/work/BoomTownTemp/docs/index.html
+        rm /home/runner/work/BoomTown/docs/index.html
+        cp /home/runner/work/TestSubmodule/TestSubmodule/Resources/index.html /home/runner/work/BoomTown/docs/index.html
+        git checkout main
+        git add /home/runner/work/BoomTown/docs/index.html
+        git commit
+        git push
       
     - name: print directory V2
       run: |
