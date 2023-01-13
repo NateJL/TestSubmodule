@@ -1,9 +1,9 @@
+name: Publish to Pages
+
 on:
   push:
     branches:
       - main
-
-name: Publish to Pages
 
 jobs:
   update-blog:
