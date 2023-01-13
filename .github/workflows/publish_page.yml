@@ -26,10 +26,9 @@ jobs:
     - name: clean Exif metadata
       run: exiftool -overwrite_original -recurse -all= public/
 
-    - name: publish blog to BoomTown: main
-      run: |
+    - name: publish to BoomTown main
+      run: echo pwd
 #        eval "$(ssh-agent -s)"
-        echo pwd
 #        ssh-add - <<< "${{ secrets.BLOG_DEPLOY }}"
 #        git config --global user.name "Jan Delgado"
 #        git config --global user.email "myemail@example.com"
