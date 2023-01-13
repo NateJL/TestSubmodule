@@ -30,6 +30,8 @@ jobs:
         echo "Head Ref: ${{ github.head_ref }}"
         rm /home/runner/work/BoomTown/docs/index.html
         cp /home/runner/work/TestSubmodule/TestSubmodule/Resources/index.html /home/runner/work/BoomTown/docs/index.html
+        git config --global user.email "nathan.john.larson@gmail.com"
+        git config --global user.name "NateJL"
         git checkout main
         git add /home/runner/work/BoomTown/docs/index.html
         git commit
