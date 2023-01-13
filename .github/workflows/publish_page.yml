@@ -13,7 +13,9 @@ jobs:
         submodules: 'recursive'
 
     - name: print directory
-      run: pwd
+      run: |
+        pwd
+        ls -a
 
     - name: check for changes
       run: git status
